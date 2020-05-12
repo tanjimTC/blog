@@ -1,0 +1,12 @@
+.logo{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo a{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    text-decoration: none;
+    color: #333;
+}
