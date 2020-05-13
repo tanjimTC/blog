@@ -1,0 +1,59 @@
+.sideBar{
+    width: 28%;
+}
+.cardHeader{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+    color: #565673;
+    font-size: 1.5em;
+}
+.profileImage{
+    width: 100%;
+    margin:10px 0;
+    box-sizing: border-box;
+}
+.profileImage img{
+    width: 100%;
+}
+.cardBody p{
+    font-size: 1em;
+    color: #565673;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+}
+.card-wrapper{
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px lightgray;
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -ms-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+.card-wrapper:hover{
+    box-shadow: 0px 0px 10px gray;
+    
+}
+
+
+.recentPost{
+    border-bottom: 1px solid lightgray;
+    padding:20px 0;
+}
+.recentPost h3{
+    font-weight: 500;
+    color: #6c6c6c;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    margin: 0;
+}
+.recentPost span{
+    font-weight: 400;
+    font-size: 12px;
+    color: #6c6c6c;
+    letter-spacing: 1px;
+}

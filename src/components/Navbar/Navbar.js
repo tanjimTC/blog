@@ -1,10 +1,10 @@
 import React,{useState} from "react";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
     const [search, setSearch] = useState(false)
-
     const handleSubmit = (e) => {
         e.preventDefault();
     };
@@ -19,16 +19,16 @@ const Navbar = () => {
     <div className="navbar">
       <ul className="navbarMenu">
         <li>
-          <a href="#">Home</a>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <a href="#">About Us</a>
+          <NavLink to="/about-us">About Us</NavLink>
         </li>
         <li>
-          <a href="#">Post</a>
+          <NavLink to="/post">Post</NavLink>
         </li>
         <li>
-          <a href="#">Contact Us</a>
+          <NavLink to="/contact-us">Contact Us</NavLink>
         </li>
       </ul>
 

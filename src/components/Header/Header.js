@@ -5,7 +5,7 @@ const Header = (props) => {
     return (
         <header className='header'>
             <nav>
-                <ul class="main-nav">
+                <ul className="main-nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
