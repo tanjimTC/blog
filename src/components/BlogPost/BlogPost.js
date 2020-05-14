@@ -16,8 +16,6 @@ const BlogPost = ({ props }) => {
     const postId = props.match.params.postId;
     const post = blogPost.data.find((x) => x.id === parseInt(postId));
     setPost(post);
-    const imageName = post.blogImage;
-    console.log(imageName);
   }, [props.match.params.postId]);
 
   if (post.blogImage === "") return null;
@@ -37,7 +35,7 @@ const BlogPost = ({ props }) => {
           alt="Post"
         />
       </div>
-  <h3>{post.slug}</h3>
+      <h3>{post.slug}</h3>
       <div className="postContent">
         <p>{post.blogText}</p>
       </div>

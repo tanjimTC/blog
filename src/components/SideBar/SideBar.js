@@ -10,11 +10,9 @@ const SideBar = (props) => {
   useEffect(() => {
     const post = blogPost.data;
     setPosts(post);
-    console.log("sidebar", post);
   }, []);
-
   return (
-    <div className="sideBar">
+    <div className="sideBar" {...props}>
       <Card>
         <div className="card-wrapper">
           <div className="cardHeader">
@@ -29,7 +27,10 @@ const SideBar = (props) => {
           <div className="cardBody">
             <p>
               HI There! This is Musarrat Anjum Chowdhury aka Tanjim.I am a
-              software developer & lifelong learner. 🚀🚀
+              software developer & lifelong learner.{" "}
+              <span role="img" aria-label="rocket">
+                🚀🚀
+              </span>
             </p>
           </div>
         </div>
@@ -47,9 +48,9 @@ const SideBar = (props) => {
             <span>Recent Post</span>
           </div>
           <div className="recentPosts">
-            {posts.map((x) =>{ 
+            {posts.map((x) => {
               return (
-                <NavLink className='navlink' to={`/post/${x.id}`} key={x.id}>
+                <NavLink className="navlink" to={`/post/${x.id}`} key={x.id}>
                   <div className="recentPost">
                     <h3>{x.blogTitle}</h3>
                     <span>{x.postedOn}</span>
