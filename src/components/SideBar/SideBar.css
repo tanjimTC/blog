@@ -57,3 +57,17 @@
     color: #6c6c6c;
     letter-spacing: 1px;
 }
+.navlink{
+    text-decoration: none;
+}
+.navlink h3{
+    transition: 0.2s all ease-in;
+    -webkit-transition: 0.2s all ease-in;
+    -moz-transition: 0.2s all ease-in;
+    -ms-transition: 0.2s all ease-in;
+    -o-transition: 0.2s all ease-in;
+}
+
+.navlink h3:hover{
+    color: rgb(26, 24, 24);
+}

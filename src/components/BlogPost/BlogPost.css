@@ -39,3 +39,17 @@
 .postImageContainer img{
     width: 100%;
 }
+
+.blogPost p{
+    font-size: 1em;
+    color: #565673;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.blogPost h3{
+    margin-left:20px;
+    color: #333;
+    font-weight: 500;
+}
