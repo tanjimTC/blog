@@ -1,51 +1,147 @@
-.homePage{
+.homePage {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
 }
-.homeLeft{
+
+.homeLeft {
+    position: relative;
     width: 69.7%;
     height: 59.5vh;
-}
-.homeLeft img{
-    width: 100%;
-    height: 59.5vh;
-    object-fit: cover;
-    object-position: top;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url('https://1.bp.blogspot.com/-uUyRrF_pZzI/V9_OnN0WMPI/AAAAAAAAD48/GDN9pK1mnuwJvYdO4SoCJ38adB0sMzmLQCLcB/s1600/Special-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.homeRight{
+.text {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'Baloo 2', cursive;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.linkToPost{
+    text-decoration: none;
+    color: white;
+}
+
+.text p {
+    margin: 0;
+    background-color: #73B3DF;
+    font-size: 0.9em;
+    padding: 2px 5px;
+    display: inline-block;
+    
+}
+
+.text h3 {
+    margin: 0;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    
+}
+
+.homeRight {
     width: 30%;
     height: 60vh;
 }
-.rightImage{
+
+.rightImage {
     width: 100%;
-    height: 20vh;
+    height: 19.5vh;
+    margin-bottom: 0.5vh;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url('https://3.bp.blogspot.com/-zlQO0zfYQd8/V9_M2m9Px-I/AAAAAAAAD4o/qucehvSfM-4210-UQCaFPr6hs7NvJdLHQCPcB/s1600/2-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    
 }
-.rightImage img{
+
+.rightImage p {
+    font-size: 0.7em;
+    margin-bottom: 5px;
+    
+}
+
+.rightImage h3 {
+    font-size: 0.9em;
+    
+}
+
+.rightImage2 {
     width: 100%;
-    max-height: 19.5vh;
-    object-fit: cover;
+    height: 19.5vh;
+    margin-bottom: 0.5vh;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url('https://3.bp.blogspot.com/-5w_tj_eAKm4/V9_M2jukj4I/AAAAAAAAD4k/uP-dwlABXso1NXG63jzmsKqE0EdD2MOlgCPcB/s1600/3-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.homeBottom{
+
+.rightImage2 p {
+    font-size: 0.7em;
+    margin-bottom: 5px;
+    
+}
+
+.rightImage2 h3 {
+    font-size: 0.9em;
+    
+}
+
+.rightImage3 {
+    width: 100%;
+    height: 19.5vh;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)), url('https://2.bp.blogspot.com/-8hLzRELoTM4/Vyc4oa1050I/AAAAAAAADVc/-vQQbmbY1owUgAb_mGNRN_X9kdpSPjLMwCLcB/s1600/asa%2B%25281%2529.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rightImage3 p {
+    font-size: 0.7em;
+    margin-bottom: 5px;
+    
+}
+
+.rightImage3 h3 {
+    font-size: 0.9em;
+    
+}
+
+.homeBottom {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
 }
 
-.homePost{
+.homePost {
     width: 70%;
 }
-.homeSideBar{
+
+.homeSideBar {
     width: 30%;
 }
-.homeContent{
+
+.homeContent {
     width: 90%;
 }
-.homeImg{
+
+.homeImg {
     width: 100%;
 }
-.homePost img{
+
+.homePost img {
     width: 100%;
     height: 450px;
     object-fit: cover;
@@ -57,10 +153,12 @@
     -ms-transition: 0.2s all ease-in;
     -o-transition: 0.2s all ease-in;
 }
-.homePost img:hover{
+
+.homePost img:hover {
     opacity: 1;
 }
-.postContent p{
+
+.postContent p {
     font-size: 1em;
     color: #565673;
     font-family: 'Baloo 2', cursive;
@@ -68,7 +166,7 @@
     padding: 10px 30px;
 }
 
-.postBtn button{
+.postBtn button {
     background: transparent;
     border: 1px solid #565673;
     border: 50%;
@@ -90,7 +188,7 @@
 }
 
 .postBtn button:hover,
-.postBtn button:focus{
+.postBtn button:focus {
     background-color: #53A2D5;
     color: white;
     outline: none;

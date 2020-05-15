@@ -1,0 +1,13 @@
+.about{
+    width: 70%;
+    background-color: white;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.about h1{
+    text-align: center;
+}
+.about p{
+    color: #565673;
+    font-family: 'Baloo 2', cursive;
+}

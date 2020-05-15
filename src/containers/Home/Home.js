@@ -10,35 +10,70 @@ const Home = (props) => {
     let data = blogPost.data;
     setState(data);
   }, []);
-  console.log(blogPost.data);
   return (
     <div>
       <Card>
         <div className="homePage">
           <section className="homeLeft">
-            <img
-              src="https://1.bp.blogspot.com/-uUyRrF_pZzI/V9_OnN0WMPI/AAAAAAAAD48/GDN9pK1mnuwJvYdO4SoCJ38adB0sMzmLQCLcB/s1600/Special-1.jpg"
-              alt="img"
-            />
+            <div className="text">
+              <p>
+                <span>
+                  <i className="fas fa-user-circle"></i>
+                </span>{" "}
+                <b>Fashion</b>
+              </p>
+              <div>
+                <NavLink className='linkToPost' to={`/post/5`}>
+                  <h3>MEMORIES FROM LAST SUMMER</h3>
+                </NavLink>
+              </div>
+            </div>
           </section>
           <section className="homeRight">
             <div className="rightImage">
-              <img
-                src="https://3.bp.blogspot.com/-zlQO0zfYQd8/V9_M2m9Px-I/AAAAAAAAD4o/qucehvSfM-4210-UQCaFPr6hs7NvJdLHQCPcB/s1600/2-1.jpg"
-                alt="img"
-              />
+              <div className="text">
+                <p>
+                  <span>
+                    <i className="fas fa-user-circle"></i>
+                  </span>{" "}
+                  <b>Fashion</b>
+                </p>
+                <div>
+                <NavLink className='linkToPost' to={`/post/5`}>
+                  <h3>BEAUTIFUL & SPECIAL MOMENT</h3>
+                </NavLink>
+                </div>
+              </div>
             </div>
-            <div className="rightImage">
-              <img
-                src="https://3.bp.blogspot.com/-5w_tj_eAKm4/V9_M2jukj4I/AAAAAAAAD4k/uP-dwlABXso1NXG63jzmsKqE0EdD2MOlgCPcB/s1600/3-1.jpg"
-                alt="img"
-              />
+            <div className="rightImage2">
+              <div className="text">
+                <p>
+                  <span>
+                    <i className="fas fa-user-circle"></i>
+                  </span>{" "}
+                  <b>Fashion</b>
+                </p>
+                <div>
+                <NavLink className='linkToPost' to={`/post/3`}>
+                  <h3>BEAUTY LIES WITHIN SPECIAL</h3>
+                </NavLink>
+                </div>
+              </div>
             </div>
-            <div className="rightImage">
-              <img
-                src="https://2.bp.blogspot.com/-8hLzRELoTM4/Vyc4oa1050I/AAAAAAAADVc/-vQQbmbY1owUgAb_mGNRN_X9kdpSPjLMwCLcB/s1600/asa%2B%25281%2529.jpg"
-                alt="img"
-              />
+            <div className="rightImage3">
+              <div className="text">
+                <p>
+                  <span>
+                    <i className="fas fa-user-circle"></i>
+                  </span>{" "}
+                  <b>Fashion</b>
+                </p>
+                <div>
+                <NavLink className='linkToPost' to={`/post/4`}>
+                  <h3>SLIDING MY WAY TO LIFE</h3>
+                </NavLink>
+                </div>
+              </div>
             </div>
           </section>
         </div>
@@ -46,8 +81,14 @@ const Home = (props) => {
       <div className="homeBottom">
         <div className="homePost">
           {state.map((x) => (
-            <div className="homeContent">
-              <Card style={{marginBottom:'30px' , letterSpacing :'1px' , paddingBottom :'20px'}}>
+            <div className="homeContent" key={Math.random()}>
+              <Card
+                style={{
+                  marginBottom: "30px",
+                  letterSpacing: "1px",
+                  paddingBottom: "20px",
+                }}
+              >
                 <div className="homeImg">
                   <img
                     src={require("../../blogPostImages/" + x.blogImage)}
@@ -55,21 +96,25 @@ const Home = (props) => {
                   />
                 </div>
                 <center>
-                <span className="blogCategory">{x.blogCategory}</span>
-                <h2 className="postTitle">{x.blogTitle}</h2>
-                <span className="postedBy">
-                  posted on {x.postedOn} by {x.author}
-                </span>
+                  <span className="blogCategory">{x.blogCategory}</span>
+                  <h2 className="postTitle">{x.blogTitle}</h2>
+                  <span className="postedBy">
+                    posted on {x.postedOn} by {x.author}
+                  </span>
                 </center>
                 <div className="postContent">
                   <p>{x.blogText.substring(0, 250)}...</p>
                 </div>
                 <center>
-                <div className='postBtn'>
-                <NavLink className="navlink" to={`/post/${x.id}`} key={x.id}>
-                    <button>READ MORE</button>
+                  <div className="postBtn">
+                    <NavLink
+                      className="navlink"
+                      to={`/post/${x.id}`}
+                      key={x.id}
+                    >
+                      <button>READ MORE</button>
                     </NavLink>
-                </div>
+                  </div>
                 </center>
               </Card>
             </div>
