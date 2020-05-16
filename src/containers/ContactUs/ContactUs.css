@@ -1,0 +1,9 @@
+@media only screen and (max-width : 600px){
+    .contact{
+        width: 100%;
+        padding: 20px;
+    }
+    .contact img{
+        width: 70%;
+    }
+}
