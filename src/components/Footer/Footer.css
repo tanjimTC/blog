@@ -67,7 +67,8 @@ section {
   color: #ffffff;
   text-align: center;
   line-height: 35px;
-  margin-left: 3px;
+  margin-left: 5px;
+  margin-bottom: 5px;
   transition:all .25s;
 }
 

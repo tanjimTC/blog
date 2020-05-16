@@ -35,7 +35,7 @@
 .text p {
     margin: 0;
     background-color: #73B3DF;
-    font-size: 0.9em;
+    font-size: 0.7em;
     padding: 2px 5px;
     display: inline-block;
     
@@ -43,7 +43,7 @@
 
 .text h3 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.3em;
     letter-spacing: 0.5px;
     
 }
@@ -66,13 +66,13 @@
 }
 
 .rightImage p {
-    font-size: 0.7em;
+    font-size: 0.5em;
     margin-bottom: 5px;
     
 }
 
 .rightImage h3 {
-    font-size: 0.9em;
+    font-size: 0.7em;
     
 }
 
@@ -88,13 +88,13 @@
 }
 
 .rightImage2 p {
-    font-size: 0.7em;
+    font-size: 0.5em;
     margin-bottom: 5px;
     
 }
 
 .rightImage2 h3 {
-    font-size: 0.9em;
+    font-size: 0.7em;
     
 }
 
@@ -109,13 +109,13 @@
 }
 
 .rightImage3 p {
-    font-size: 0.7em;
+    font-size: 0.5em;
     margin-bottom: 5px;
     
 }
 
 .rightImage3 h3 {
-    font-size: 0.9em;
+    font-size: 0.7em;
     
 }
 
@@ -192,4 +192,41 @@
     background-color: #53A2D5;
     color: white;
     outline: none;
+}
+
+
+@media only screen and (max-width : 600px){
+    .text {
+        left: 10%;
+    }
+    .text h3{
+        font-size: 0.6em;
+    }
+    .text p{
+        font-size: 0.5em;
+    }
+    .rightImage .linkToPost h3{
+        font-size: 0.4em;
+    }
+    .rightImage .text p{
+        font-size: 0.4em;
+    }
+    .rightImage2 .linkToPost h3{
+        font-size: 0.4em;
+    }
+    .rightImage2 .text p{
+        font-size: 0.4em;
+    }
+    .rightImage3 .linkToPost h3{
+        font-size: 0.4em;
+    }
+    .rightImage3 .text p{
+        font-size: 0.4em;
+    }
+    .homePost{
+        width: 65%;
+    }
+    .homePost img{
+        height: 40vh;
+    }
 }

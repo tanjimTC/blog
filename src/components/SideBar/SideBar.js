@@ -3,6 +3,7 @@ import "./SideBar.css";
 import Card from "../UI/Card/Card";
 import blogPost from "../../data/blog.json";
 import { NavLink } from "react-router-dom";
+import Social from "../../containers/Social/Social";
 
 const SideBar = (props) => {
   const [posts, setPosts] = useState([]);
@@ -35,11 +36,13 @@ const SideBar = (props) => {
           </div>
         </div>
       </Card>
-      <Card>
+      <Card style={{textAlign : 'center'}}>
         <div className="card-wrapper">
           <div className="cardHeader">
             <span>Social List</span>
           </div>
+          <Social style={{ float: "left" , display : 'contents' }}/>
+          
         </div>
       </Card>
       <Card>

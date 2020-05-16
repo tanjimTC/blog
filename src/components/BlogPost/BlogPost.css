@@ -53,3 +53,29 @@
     color: #333;
     font-weight: 500;
 }
+
+@media only screen and (max-width : 600px){
+    .blogPost {
+        width: 60%;
+    }
+    .postTitle{
+        font-size: 0.9em;
+        letter-spacing: normal;
+    }
+    .postedBy{
+        font-size: 0.7em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .blogPost h3,h2{
+        font-size: 0.9em;
+        margin-left:10px;
+    }
+    .blogPost p{
+        font-size: 0.8em;
+        padding: 10px;
+    }
+    .postContent p{
+        font-size: 0.8em;
+        padding: 15px;
+    }
+}

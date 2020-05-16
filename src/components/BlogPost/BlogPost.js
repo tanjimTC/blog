@@ -26,7 +26,7 @@ const BlogPost = ({ props }) => {
         <span className="blogCategory">{post.blogCategory}</span>
         <h1 className="postTitle">{post.blogTitle}</h1>
         <span className="postedBy">
-          posted on {post.postedOn} by {post.author}
+          posted on {post.postedOn} by <b>{post.author}</b>
         </span>
       </div>
       <div className="postImageContainer">

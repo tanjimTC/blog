@@ -4,6 +4,7 @@ import "./style.css";
 import SideBar from "../../components/SideBar/SideBar";
 import blogPost from "../../data/blog.json";
 import { NavLink } from "react-router-dom";
+import '../../../src/';
 const Home = (props) => {
   const [state, setState] = useState([]);
   useEffect(() => {
@@ -20,7 +21,7 @@ const Home = (props) => {
                 <span>
                   <i className="fas fa-user-circle"></i>
                 </span>{" "}
-                <b>Fashion</b>
+                Fashion
               </p>
               <div>
                 <NavLink className='linkToPost' to={`/post/5`}>
@@ -120,7 +121,7 @@ const Home = (props) => {
             </div>
           ))}
         </div>
-        <SideBar style={{ width: "30%" }} />
+        <SideBar  />
       </div>
     </div>
   );

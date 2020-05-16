@@ -71,3 +71,29 @@
 .navlink h3:hover{
     color: rgb(26, 24, 24);
 }
+
+@media only screen and (max-width: 600px){
+    .sideBar {
+        width: 35%;
+    }
+    .card-wrapper {
+        padding: 10px;
+    }
+    .cardHeader {
+        padding: 5px 0;
+        box-sizing: border-box;
+        color: #565673;
+        font-size: 1.1em;
+    }
+    .cardBody p {
+        font-size: 0.8em;
+    }
+    .recentPost h3 {
+        letter-spacing:0.4px;
+        font-size: 0.9em;
+        margin: 0;
+    }
+    .footer-right a{
+        margin: 3px;
+    }
+}

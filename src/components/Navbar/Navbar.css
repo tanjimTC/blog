@@ -51,3 +51,19 @@
 .searchBox:focus{
     outline: none;
 }
+
+@media only screen and (max-width : 600px){
+    .navbarMenu{
+        font-size: 0.7em;
+        padding: 0;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    .search img {
+        display: none;
+    }
+    .logo a{
+        font-size: 1.5em;
+    }
+}
